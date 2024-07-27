@@ -23,29 +23,64 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header Container */
 header {
-    background-color: #343a40;
-    color: #fff;
-    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0; /* Light grey border */
+    background-color: black; /* Light background color */
 }
 
-header .container {
+/* Header Branding */
+header a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-}
-
-header nav ul li a {
-    color: #fff;
+    margin-bottom: 0;
     text-decoration: none;
-    font-weight: bold;
+    color: white; /* Black text color */
+}
+
+
+header span {
+    font-size: 1.25rem; /* Larger font size for the header text */
+    font-weight: bold; /* Bold text */
+    margin-right: 20rem; /* Space between header text and navigation */
+}
+
+#barbell-icon{
+    height: 3rem;
+    margin-right: 1rem; /* Space between SVG and text */
+}
+
+/* Navigation */
+ul.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav li.nav-item {
+    margin: 0 0.5rem; /* Space between nav items */
+}
+
+ul.nav a.nav-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.25rem; /* Rounded corners */
+    font-size: 1rem; /* Font size for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+ul.nav a.nav-link.active, /* Active link */
+ul.nav a.nav-link:hover { /* Hover state */
+    color: #fff; /* White text color */
+    background-color: lightseagreen; /* Blue background */
 }
 
 /* Main Content */
@@ -165,11 +200,54 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+/* Footer Navigation */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-top: 1px solid #e0e0e0; /* Optional: light border on top */
+    padding-left: 14rem;
+    padding-right: 14rem;
+}
+
+/* Footer Text */
+#footer-text {
+    margin: 0;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin: 0 0.5rem; /* Space between nav items */
+}
+
+.footer-nav .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-nav .nav-link:hover {
+    background-color: lightseagreen; /* Hover background */
+    color: white;
 }
 
 @media (max-width: 768px) {
