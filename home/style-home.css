@@ -7,10 +7,9 @@
 
 /* Container */
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     max-width: 1200px;
-    rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
@@ -19,40 +18,14 @@
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
-    color: black;
-    background-image: url('home/image.jpg'); 
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center center; /* Centers the image */
-    animation: backgroundAnimation 10s linear infinite; /* Animates the background image */
-    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
-    color: white; /* Sets a default text color to ensure readability */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+}
 
-}
-@keyframes backgroundAnimation {
-    0% {
-        background-size: 100%;
-    }
-    50% {
-        background-size: 110%; /* Slight zoom effect */
-    }
-    100% {
-        background-size: 100%;
-    }
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 10px;
-}
 /* Header */
 header {
-    background-color: #e80606;
+    background-color: #343a40;
     color: #fff;
     padding: 1em 0;
 }
@@ -72,16 +45,22 @@ header nav ul {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Main Content */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
     padding: 2em 0;
 }
 
 /* Hero Section */
 .hero {
-    background: #e0e4f1;
+    width: 100%;
+    background-color: #e9ecef;
     text-align: center;
     padding: 2em 0;
 }
@@ -89,58 +68,73 @@ main {
 .hero h2 {
     margin-bottom: 0.5em;
     font-size: 2em;
+    color: #343a40;
 }
 
 .hero p {
     margin-bottom: 1em;
+    color: #6c757d;
 }
 
 .cta-button {
     padding: 0.5em 1em;
-    background: #0779e4;
+    background: #041586;
     color: #fff;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 /* About Section */
 .about {
-    background: #f9f9f9;
+    width: 100%;
+    background-color: #f8f9fa;
     padding: 2em 0;
     text-align: center;
 }
 
 .about h2 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    color: #343a40;
 }
 
 /* Services Section */
 .services {
-    background: #fff;
-    padding: 2em 0;
-}
-
-.services .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1em;
+    width: 100%;
+    background-color: #fff;
+    padding: 5% 0;
     text-align: center;
 }
 
+.services .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+
 .service {
-    padding: 1em;
-    border: 1px solid #ddd;
+    width: 85%;
+    padding: 5%;
+    border: 4px solid #ddd;
     border-radius: 5px;
+    margin-bottom: 3%;
 }
 
 .service h3 {
     margin-bottom: 0.5em;
+    color: #343a40;
 }
+.services h2 {
+    border-bottom: 1px solid #ddd; /* Add a 1px solid line below the title */
+    margin-bottom: 1em; /* Add some margin below the title */
+  }
 
 /* Contact Section */
 .contact {
-    background: #f9f9f9;
+    width: 100%;
+    background-color: #f8f9fa;
     padding: 2em 0;
     text-align: center;
 }
@@ -163,15 +157,16 @@ main {
 
 .contact button {
     padding: 0.5em 1em;
-    background: #0779e4;
+    background: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -181,5 +176,9 @@ footer {
     header .container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .services .container {
+        grid-template-columns: 1fr;
     }
 }
