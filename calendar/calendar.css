@@ -358,6 +358,14 @@ ul.weekdays{
 .footer-logo{
     z-index: 4;
 }
+
+.main-title h1{
+    font-weight: bold;
+}
+
+.task-title h2{
+    font-weight: bold;
+}
   
   
 

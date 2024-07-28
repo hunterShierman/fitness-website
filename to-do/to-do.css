@@ -107,6 +107,10 @@ header span {
     color: white;
 }
 
+#task-text{
+    font-weight: bold;
+}
+
 /* Navigation */
 ul.nav {
     display: flex;
