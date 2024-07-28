@@ -81,11 +81,6 @@ header span {
 }
 
 
-
-
-
-
-
 /* Navigation */
 ul.nav {
     display: flex;
@@ -121,6 +116,7 @@ ul.nav a.nav-link:hover { /* Hover state */
 
 .main-title{
     border: 4px solid #ddd;
+    margin-bottom: 1%;
 }
 
 .main-title h1{
@@ -130,13 +126,9 @@ ul.nav a.nav-link:hover { /* Hover state */
 }
 
 /* calendar */
-/* calendar */
-.calendar{
-    height: 70vh;
-}
 
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+/* ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;} */
 
 /* Month header */
 .month {
@@ -146,30 +138,24 @@ body {font-family: Verdana, sans-serif;}
   text-align: center;
 }
 
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent; /* Removes the background */
+    border: none; /* Removes any border */
 }
 
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none; /* Removes background from icons */
 }
 
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
+/* Optional: Adjust icon color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Optional: Change icon color if needed */
 }
 
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
+
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
@@ -187,6 +173,9 @@ body {font-family: Verdana, sans-serif;}
 
 /* Days (1-31) */
 .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+  gap: 5px; /* Space between days */
   padding: 10px 0;
   background: #eee;
   margin: 0;
@@ -194,13 +183,15 @@ body {font-family: Verdana, sans-serif;}
 
 .days li {
   list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
   text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
+  font-size: 12px;
   color: #777;
+  padding: 10px; /* Add some padding for better spacing */
+  border-radius: 10px; /* Optional: Rounded corners */
 }
+
+/* month calendar */
+
 
 /* Highlight the "current" day */
 .current-day {
@@ -208,4 +199,86 @@ body {font-family: Verdana, sans-serif;}
   background: #1abc9c;
   color: white !important;
 }
+
+/*tasks*/
+.task-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ddd;
+    margin-top: 2%;
+}
+
+.tasks{
+    border: 4px solid #ddd;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.flexIsDumb{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.badge-custom{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1rem !important;
+}
+
+/* input */
+.inputContainer{
+    display:flex;
+    border: 4px solid #ddd;
+}
+
+.userInfo h3{
+    display: flex;
+    justify-content: center;
+}
+
+#plan-text{
+    font-size:1.3rem;
+    overflow:visible;
+}
+
+/* Basic styling for badges */
+.plan-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.plan-badge:hover {
+    transform: scale(1.1); /* Enlarge the badge slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Optional: Adding a slight animation on text color change */
+.plan-text {
+    margin: 0;
+    transition: color 0.3s;
+    font-size: 1rem !important;
+}
+
+.plan-badge:hover .plan-text {
+    color: #ffeb3b; /* Change text color on hover */
+}
+
+
+
+
 
