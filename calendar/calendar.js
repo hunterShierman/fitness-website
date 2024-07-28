@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "July", "August", "September", "October", "November", "December"
     ];
 
-    const years = [2024, 2025, 2026, 2027];
+    const years = [2024, 2025, 2026, 2027,2028,2029,2030];
 
     const carouselInner = document.getElementById('carousel-inner');
 
