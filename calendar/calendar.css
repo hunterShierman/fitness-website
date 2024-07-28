@@ -188,6 +188,7 @@ body {font-family: Verdana, sans-serif;} */
   color: #777;
   padding: 10px; /* Add some padding for better spacing */
   border-radius: 10px; /* Optional: Rounded corners */
+  border: 2px solid #d3c9c9;
 }
 
 /* month calendar */
@@ -277,6 +278,66 @@ body {font-family: Verdana, sans-serif;} */
 .plan-badge:hover .plan-text {
     color: #ffeb3b; /* Change text color on hover */
 }
+
+#carousel-inner{
+    text-align: center;
+}
+
+/* Month content and carousel controls */
+.month-content {
+    position: relative; /* Ensure positioning for absolute elements */
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: transparent; /* Removes the background */
+    border: none; /* Removes any border */
+    color: white; /* Arrow color */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none; /* Removes background from icons */
+}
+
+
+/* Optional: Adjust icon color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Change icon color if needed */
+}
+
+ul.weekdays{
+    display: flex;
+    justify-content: center;
+}
+
+.month-year-container {
+    background-color: lightseagreen; /* Green background */
+    color: white; /* White text color for contrast */
+    padding: 1rem; /* Add padding for spacing */
+    text-align: center; /* Center align the text */
+    margin-bottom: 1rem; /* Space between month-year container and days */
+    border-radius: 0.5rem; /* Rounded corners (optional) */
+}
+
+.month-year-container h1,
+.month-year-container h2 {
+    margin: 0.5rem 0; /* Space between headings */
+}
+
 
 
 

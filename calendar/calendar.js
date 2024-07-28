@@ -63,6 +63,54 @@ function hard() {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    const years = [2024, 2025, 2026, 2027];
+
+    const carouselInner = document.getElementById('carousel-inner');
+
+    years.forEach(year => {
+        months.forEach((month, index) => {
+            const daysInMonth = new Date(year, index + 1, 0).getDate();
+            const carouselItem = document.createElement('div');
+            carouselItem.classList.add('carousel-item');
+            if (year === 2024 && month === "January") {
+                carouselItem.classList.add('active');
+            }
+            carouselItem.innerHTML = `
+                <div class="month-content">
+                    <div class="month-year-container">
+                        <h1>${month}</h1>
+                        <h2>${year}</h2>
+                    </div>
+                    <ul class="days">
+                        ${generateDays(daysInMonth)}
+                    </ul>
+                </div>
+            `;
+            carouselInner.appendChild(carouselItem);
+        });
+    });
+
+    function generateDays(days) {
+        let daysHtml = '';
+        for (let i = 1; i <= days; i++) {
+            daysHtml += `<li onclick="colorChange(event)">${i}</li>`;
+        }
+        return daysHtml;
+    }
+});
+
+document.querySelector('.btn1').addEventListener('click', beginner);
+document.querySelector('.btn2').addEventListener('click', medium);
+document.querySelector('.btn3').addEventListener('click', hard);
+
+
+
 
 document.querySelector('.btn1').addEventListener('click', beginner);
 document.querySelector('.btn2').addEventListener('click', medium);
