@@ -137,7 +137,6 @@ main {
 /* Services Section */
 .services {
     width: 100%;
-    background-color: #fff;
     padding: 5% 0;
     text-align: center;
 }
@@ -152,26 +151,29 @@ main {
 .service {
     width: 85%;
     padding: 5%;
-    border: 4px solid #ddd;
+    border: 4px solid lightseagreen;
     border-radius: 5px;
     margin-bottom: 3%;
+    background-color: lightseagreen;
+    color: white;
 }
 
 .service h3 {
     margin-bottom: 0.5em;
-    color: #343a40;
+    color: white;
+    font-weight: bold;
 }
 .services h2 {
-    border-bottom: 1px solid #ddd; /* Add a 1px solid line below the title */
     margin-bottom: 1em; /* Add some margin below the title */
+
   }
 
 /* Contact Section */
 .contact {
     width: 100%;
-    background-color: #f8f9fa;
     padding: 2em 0;
     text-align: center;
+    border: 4px solid #ddd;
 }
 
 .contact form {
@@ -259,4 +261,27 @@ main {
     .services .container {
         grid-template-columns: 1fr;
     }
+}
+#home{
+    border: 4px solid #ddd;
+}
+
+#home h2{
+    font-weight: bold;
+}
+
+#about{
+    border: 4px solid #ddd;
+}
+
+#about h2{
+    font-weight: bold;
+}
+
+#services h2{
+    font-weight: bold;
+}
+
+#contact h2{
+    font-weight: bold;
 }
