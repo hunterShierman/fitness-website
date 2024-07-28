@@ -9,6 +9,7 @@ header {
     margin-bottom: 1rem;
     border-bottom: 1px solid #e0e0e0; /* Light grey border */
     background-color: black; /* Light background color */
+
 }
 
 /* Header Branding */
@@ -80,12 +81,6 @@ header span {
     color: white;
 }
 
-
-
-
-
-
-
 /* Navigation */
 ul.nav {
     display: flex;
@@ -120,7 +115,8 @@ ul.nav a.nav-link:hover { /* Hover state */
 }
 
 .main-title{
-    background-color: lightgray;
+    border: 4px solid #ddd;
+
 }
 
 .main-title h1{
@@ -129,7 +125,4 @@ ul.nav a.nav-link:hover { /* Hover state */
     align-items: center;
 }
 
-.calendar{
-    height: 70vh;
-    background-color: lightgray;
-}
+
