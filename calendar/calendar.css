@@ -177,7 +177,7 @@ body {font-family: Verdana, sans-serif;} */
   grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
   gap: 5px; /* Space between days */
   padding: 10px 0;
-  background: #eee;
+  /* background: #eee; */
   margin: 0;
 }
 
@@ -188,7 +188,7 @@ body {font-family: Verdana, sans-serif;} */
   color: #777;
   padding: 10px; /* Add some padding for better spacing */
   border-radius: 10px; /* Optional: Rounded corners */
-  border: 2px solid #d3c9c9;
+  border: 1px solid #d3c9c9;
 }
 
 /* month calendar */
@@ -206,7 +206,7 @@ body {font-family: Verdana, sans-serif;} */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px solid #ddd;
+    border: 2px solid #ddd;
     margin-top: 2%;
 }
 
