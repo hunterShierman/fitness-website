@@ -1,5 +1,4 @@
 
-/* buttons */
 /* Header Container */
 header {
     display: flex;
@@ -7,8 +6,8 @@ header {
     justify-content: center;
     padding: 1rem 0;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0; /* Light grey border */
-    background-color: black; /* Light background color */
+    border-bottom: 1px solid #e0e0e0; 
+    background-color: black;
 }
 
 /* Header Branding */
@@ -17,19 +16,17 @@ header a {
     align-items: center;
     margin-bottom: 0;
     text-decoration: none;
-    color: white; /* Black text color */
+    color: white;
 }
 
 
 header span {
-    font-size: 1.25rem; /* Larger font size for the header text */
-    font-weight: bold; /* Bold text */
-    margin-right: 20rem; /* Space between header text and navigation */
+    font-size: 1.25rem; 
+    font-weight: bold;
+    margin-right: 20rem;
 }
 
 /* footer */
-
-/* Footer Container */
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +35,7 @@ header span {
     padding: 1rem;
     background-color: black;
     color: white;
-    border-top: 1px solid #e0e0e0; /* Optional: light border on top */
+    border-top: 1px solid #e0e0e0;
     padding-left: 14rem;
     padding-right: 14rem;
 }
@@ -65,7 +62,7 @@ header span {
 }
 
 .footer-nav li {
-    margin: 0 0.5rem; /* Space between nav items */
+    margin: 0 0.5rem;
 }
 
 .footer-nav .nav-link {
@@ -78,7 +75,7 @@ header span {
 }
 
 .footer-nav .nav-link:hover {
-    background-color: rgb(26, 188, 156); /* Hover background */
+    background-color: rgb(26, 188, 156);
     color: white;
 }
 
@@ -93,31 +90,30 @@ ul.nav {
 }
 
 ul.nav li.nav-item {
-    margin: 0 0.5rem; /* Space between nav items */
+    margin: 0 0.5rem;
 }
 
 ul.nav a.nav-link {
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
-    border-radius: 0.25rem; /* Rounded corners */
-    font-size: 1rem; /* Font size for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    border-radius: 0.25rem;
+    font-size: 1rem; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
-ul.nav a.nav-link.active, /* Active link */
-ul.nav a.nav-link:hover { /* Hover state */
-    color: #fff; /* White text color */
-    background-color: rgb(26, 188, 156); /* Blue background */
+ul.nav a.nav-link.active,
+ul.nav a.nav-link:hover {
+    color: #fff; 
+    background-color: rgb(26, 188, 156);
 }
 
 #barbell-icon{
     height: 3rem;
-    margin-right: 1rem; /* Space between SVG and text */
+    margin-right: 1rem; 
 }
 
 .main-title{
-    /* border: 2px solid #ddd; */
     margin-bottom: 1%;
 }
 
@@ -126,11 +122,6 @@ ul.nav a.nav-link:hover { /* Hover state */
     justify-content: center;
     align-items: center;
 }
-
-/* calendar */
-
-/* ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;} */
 
 /* Month header */
 .month {
@@ -142,19 +133,19 @@ body {font-family: Verdana, sans-serif;} */
 
 .carousel-control-prev,
 .carousel-control-next {
-    background: transparent; /* Removes the background */
-    border: none; /* Removes any border */
+    background: transparent; 
+    border: none;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background: none; /* Removes background from icons */
+    background: none;
 }
 
 /* Optional: Adjust icon color */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Optional: Change icon color if needed */
+    filter: invert(1);
 }
 
 
@@ -176,10 +167,9 @@ body {font-family: Verdana, sans-serif;} */
 /* Days (1-31) */
 .days {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
-  gap: 5px; /* Space between days */
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
   padding: 10px 0;
-  /* background: #eee; */
   margin: 0;
 }
 
@@ -188,13 +178,10 @@ body {font-family: Verdana, sans-serif;} */
   text-align: center;
   font-size: 12px;
   color: #777;
-  padding: 10px; /* Add some padding for better spacing */
-  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 10px;
+  border-radius: 10px;
   border: 1px solid #d3c9c9;
 }
-
-/* month calendar */
-
 
 /* Highlight the "current" day */
 .current-day {
@@ -208,13 +195,11 @@ body {font-family: Verdana, sans-serif;} */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid #ddd; */
     margin-top: 2%;
 
 }
 
 .tasks{
-    /* border: 2px solid #ddd; */
     margin-top: 1%;
     display: flex;
     justify-content: center;
@@ -254,15 +239,13 @@ body {font-family: Verdana, sans-serif;} */
     overflow:visible;
 }
 
-/* Basic styling for badges */
-
 #carousel-inner{
     text-align: center;
 }
 
 /* Month content and carousel controls */
 .month-content {
-    position: relative; /* Ensure positioning for absolute elements */
+    position: relative;
     padding: 20px;
     text-align: center;
 }
@@ -279,21 +262,19 @@ body {font-family: Verdana, sans-serif;} */
 
 .carousel-control-prev,
 .carousel-control-next {
-    background: transparent; /* Removes the background */
-    border: none; /* Removes any border */
-    color: white; /* Arrow color */
+    background: transparent;
+    border: none;
+    color: white;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background: none; /* Removes background from icons */
+    background: none;
 }
 
-
-/* Optional: Adjust icon color */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Change icon color if needed */
+    filter: invert(1);
 }
 
 ul.weekdays{
@@ -302,68 +283,64 @@ ul.weekdays{
 }
 
 .month-year-container {
-    background-color: #1abc9c; /* Green background */
-    color: white; /* White text color for contrast */
-    padding: 1rem; /* Add padding for spacing */
-    text-align: center; /* Center align the text */
-    margin-bottom: 1rem; /* Space between month-year container and days */
-    border-radius: 0.5rem; /* Rounded corners (optional) */
+    background-color: #1abc9c;
+    color: white; 
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
 }
 
 .month-year-container h1{
-    margin: 0.5rem 0; /* Space between headings */
+    margin: 0.5rem 0;
     font-family: Verdana, sans-serif;
     font-size: 1.8rem;
 }
 
 .month-year-container h2{
-    margin: 0.5rem 0; /* Space between headings */
+    margin: 0.5rem 0;
     font-family: Verdana, sans-serif;
     font-size: 1.3rem;
 }
 
-
-/* Define CSS variables for colors */
-
 /* Basic button styles */
 .slide {
-    position: relative; /* Ensure positioning for the pseudo-element */
-    overflow: hidden; /* Hide the overflow of the pseudo-element */
+    position: relative;
+    overflow: hidden;
     color: #4e4e4e;
     border: 1px solid #d3c9c9;
-    transition: color 0.1s, border-color 0.1s; /* Smooth transition for color and border */
+    transition: color 0.1s, border-color 0.1s;
 }
 
 /* Pseudo-element for animation */
 .slide::before {
-    content: ''; /* No text */
-    position: absolute; /* Position it absolutely within the button */
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(26, 188, 156); /* Background color to animate to */
-    transform: scaleX(0); /* Start with no visible color */
-    transform-origin: left; /* Scale from left to right */
-    transition: transform 0.5s; /* Smooth transition */
+    background-color: rgb(26, 188, 156);
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.5s;
 }
 
 /* On hover or focus */
 .slide:hover::before,
 .slide:focus::before {
-    transform: scaleX(1); /* Fill the button */
+    transform: scaleX(1); 
 }
 
 /* Additional button styles */
 .slide:hover,
 .slide:focus {
-     /* Changes border color on hover */
-    color: #fff; /* Text color to white on hover */
+    color: #fff;
 }
 
 .slide h3{
-    position: relative; /* Ensures text is above the pseudo-element */
-    z-index: 2; /* Ensures text remains visible above the background animation */
+    position: relative;
+    z-index: 2;
 }
 
 .footer-logo{
@@ -373,9 +350,6 @@ ul.weekdays{
 .main-title h1{
     font-weight: bold;
     font-size: 2.2rem;
-    
-
-
 }
 
 .task-title h2{

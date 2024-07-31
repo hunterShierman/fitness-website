@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     justify-content: space-between;
 }
-/* buttons */
+
 /* Header Container */
 header {
     display: flex;
@@ -15,8 +15,8 @@ header {
     justify-content: center;
     padding: 1rem 0;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0; /* Light grey border */
-    background-color: black; /* Light background color */
+    border-bottom: 1px solid #e0e0e0;
+    background-color: black;
 }
 
 /* Header Branding */
@@ -25,20 +25,20 @@ header a {
     align-items: center;
     margin-bottom: 0;
     text-decoration: none;
-    color: white; /* Black text color */
+    color: white; 
 }
 
 
 header span {
-    font-size: 1.25rem; /* Larger font size for the header text */
-    font-weight: bold; /* Bold text */
-    margin-right: 20rem; /* Space between header text and navigation */
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right: 20rem;
 }
 
 
 .titlesubcard, .todo-container {
     width: 85%;
-    max-width: 600px; /* Optional max-width for larger screens */
+    max-width: 600px;
     padding: 3%;
     border: 4px solid #ddd;
     border-radius: 5px;
@@ -47,8 +47,8 @@ header span {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center; /* Ensure the content inside is centered */
-    margin: 4px auto; /* Center the container */
+    align-items: center; 
+    margin: 4px auto; 
 }
 /* footer */
 .calendar {
@@ -65,7 +65,7 @@ header span {
     padding: 1rem;
     background-color: black;
     color: white;
-    border-top: 1px solid #e0e0e0; /* Optional: light border on top */
+    border-top: 1px solid #e0e0e0; 
     padding-left: 14rem;
     padding-right: 14rem;
 }
@@ -92,7 +92,7 @@ header span {
 }
 
 .footer-nav li {
-    margin: 0 0.5rem; /* Space between nav items */
+    margin: 0 0.5rem;
 }
 
 .footer-nav .nav-link {
@@ -104,7 +104,7 @@ header span {
 }
 
 .footer-nav .nav-link:hover {
-    background-color: rgb(26, 188, 156); /* Hover background */
+    background-color: rgb(26, 188, 156);
     color: white;
 }
 
@@ -122,31 +122,29 @@ ul.nav {
 }
 
 ul.nav li.nav-item {
-    margin: 0 0.5rem; /* Space between nav items */
+    margin: 0 0.5rem; 
 }
 
 ul.nav a.nav-link {
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
-    border-radius: 0.25rem; /* Rounded corners */
-    font-size: 1rem; /* Font size for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    border-radius: 0.25rem; 
+    font-size: 1rem; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 ul.nav a.nav-link.active, /* Active link */
-ul.nav a.nav-link:hover { /* Hover state */
-    color: #fff; /* White text color */
-    background-color: rgb(26, 188, 156); /* Blue background */
+ul.nav a.nav-link:hover {
+    color: #fff;
+    background-color: rgb(26, 188, 156); 
 }
 
 #barbell-icon{
     height: 3rem;
-    margin-right: 1rem; /* Space between SVG and text */
+    margin-right: 1rem; 
 }
 
-.main-title{
-}
 
 .main-title h1{
     display: flex;
