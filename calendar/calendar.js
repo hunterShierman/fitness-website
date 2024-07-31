@@ -87,6 +87,17 @@ document.addEventListener("DOMContentLoaded", function() {
                         <h1>${month}</h1>
                         <h2>${year}</h2>
                     </div>
+
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+
                     <ul class="days">
                         ${generateDays(daysInMonth)}
                     </ul>
@@ -104,13 +115,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return daysHtml;
     }
 });
-
-document.querySelector('.btn1').addEventListener('click', beginner);
-document.querySelector('.btn2').addEventListener('click', medium);
-document.querySelector('.btn3').addEventListener('click', hard);
-
-
-
 
 document.querySelector('.btn1').addEventListener('click', beginner);
 document.querySelector('.btn2').addEventListener('click', medium);

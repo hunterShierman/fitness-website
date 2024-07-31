@@ -100,10 +100,11 @@ header span {
     color: white;
     padding: 0.5rem;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 .footer-nav .nav-link:hover {
-    background-color: lightseagreen; /* Hover background */
+    background-color: rgb(26, 188, 156); /* Hover background */
     color: white;
 }
 
@@ -136,7 +137,7 @@ ul.nav a.nav-link {
 ul.nav a.nav-link.active, /* Active link */
 ul.nav a.nav-link:hover { /* Hover state */
     color: #fff; /* White text color */
-    background-color: lightseagreen; /* Blue background */
+    background-color: rgb(26, 188, 156); /* Blue background */
 }
 
 #barbell-icon{
@@ -152,5 +153,15 @@ ul.nav a.nav-link:hover { /* Hover state */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#tasks-bottom{
+    margin-bottom: 20%;
+}
+
+#submit-btn{
+    background-color: rgb(26, 188, 156);
+    color: white;
+    border: none;
 }
 
